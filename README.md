@@ -62,9 +62,9 @@ O MobileTicketsIonic é um aplicativo desenvolvido com Ionic + Angular para simu
 
 # 🚀 Como executar
 
-bash
-npm install
-ionic serve
+- bash
+- npm install
+- ionic serve
 
 # 📄 Licença
 Este projeto está sob a licença MIT.
