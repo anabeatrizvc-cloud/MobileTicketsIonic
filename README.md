@@ -66,5 +66,12 @@ O MobileTicketsIonic é um aplicativo desenvolvido com Ionic + Angular para simu
 - npm install
 - ionic serve
 
+# Equipe
+
+- Ana Beatriz Vasconcelos 01707957
+- Juliana Eugênia Anacleto Barbosa 01800345
+- Thayana Araujo brito da Silva 01784035
+- Lucas Gabriel de Aguiar Santiago 01814331
+
 # 📄 Licença
 Este projeto está sob a licença MIT.
