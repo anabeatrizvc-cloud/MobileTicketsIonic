@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Atendimento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button expand="block" color="success" (click)="liberarAudio()" *ngIf="!audioLiberado">
+    Ativar Som
+  </ion-button>
+
+  <ion-button expand="block" color="primary" (click)="iniciarAtendimentoAutomatico()">
+    Iniciar Atendimento
+  </ion-button>
+
+  <ion-button expand="block" color="medium" (click)="pararAtendimento()">
+    Parar Atendimento
+  </ion-button>
+
+  <div *ngIf="senhaAtual" style="margin-top:20px; text-align:center;">
+    <h2>Atendimento em andamento</h2>
+    <h1>{{ senhaAtual }}</h1>
+    <p>Tempo restante: {{ tempoRestante }} s</p>
+  </div>
+
+  <div *ngIf="!senhaAtual" style="text-align:center; margin-top:20px;">
+    <h2>Aguardando próxima senha...</h2>
+  </div>
+
+  <ion-card style="margin-top:20px;">
+    <ion-card-header>
+      <ion-card-title>Fila de espera</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list *ngIf="proximasSenhas.length > 0">
+
+        <ion-item *ngFor="let item of proximasSenhas">
+
+          <ion-label>
+            <h2>{{ item.senha }}</h2>
+            <p>Chamada em {{ item.tempo }} s</p>
+          </ion-label>
+
+          <ion-button
+            slot="end"
+            color="danger"
+            size="small"
+            (click)="excluirSenha(item.senha)">
+            X
+          </ion-button>
+
+        </ion-item>
+
+      </ion-list>
+
+      <p *ngIf="proximasSenhas.length === 0">
+        Nenhuma senha na fila.
+      </p>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

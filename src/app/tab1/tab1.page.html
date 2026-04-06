@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Emitir Senha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button expand="block" (click)="emitir('SP')">
+    Senha Prioritária (SP)
+  </ion-button>
+
+  <ion-button expand="block" (click)="emitir('SG')">
+    Senha Geral (SG)
+  </ion-button>
+
+  <ion-button expand="block" (click)="emitir('SE')">
+    Senha Exames (SE)
+  </ion-button>
+
+  <h2>Fila de Espera</h2>
+
+  <ion-list>
+    <ion-item *ngFor="let senha of senhasGeradas">
+      {{ senha }}
+    </ion-item>
+  </ion-list>
+
+</ion-content>

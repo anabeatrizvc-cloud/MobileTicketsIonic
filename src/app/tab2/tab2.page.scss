@@ -1,0 +1,62 @@
+.tela-hospital {
+  --background: #070707;
+}
+
+.card-principal,
+.fila-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.status-box {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #ecb4b4;
+  border: 1px solid #eaeef2;
+  text-align: center;
+}
+
+.status-box h2 {
+  color: #c01540;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.senha-atual {
+  font-size: 26px;
+  font-weight: bold;
+  color: #bd111a;
+  margin: 10px 0;
+}
+
+.tempo {
+  font-size: 18px;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.aguardando {
+  background-color: #070707;
+}
+
+.sem-fila {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+}
+
+ion-card-title {
+  color: #c01523;
+}
+
+ion-card-subtitle {
+  color: #959923;
+}
+
+ion-item {
+  --background: #201f1f;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
